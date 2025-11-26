@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferns & Fable Bracelets | Handmade Jewelry from Texas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #2c3e2c;
+            background: #faf9f6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #7a9b7e 0%, #a8c9a5 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #5a7a5a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #7a9b7e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(122, 155, 126, 0.1), rgba(168, 201, 165, 0.1));
+            padding: 4rem 2rem;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            color: #5a7a5a;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #4a5a4a;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.12);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature h3 {
+            color: #5a7a5a;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            margin: 4rem 0;
+        }
+
+        .section h2 {
+            color: #5a7a5a;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: #7a9b7e;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #7a9b7e 0%, #a8c9a5 100%);
+            color: white;
+            padding: 3rem 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .cta-section h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background: white;
+            color: #5a7a5a;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background: #5a7a5a;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ferns & Fable Bracelets 🌿✨</h1>
+        <p>Handmade Jewelry Crafted with Love in Texas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#custom">Custom Orders</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="hero">
+            <h2>Welcome to Ferns & Fable Bracelets! 🌿✨</h2>
+            <p>We're two young creators from Texas who love crafting affordable, high-quality jewelry—each piece made with care, creativity, and a whole lot of heart. Our shop features clay-bead bracelets and limited edition glass bead pieces, and we're excited to keep expanding into new materials and styles as we grow.</p>
+            <p>Our pieces are low price, high quality, and all handmade—so while they may not be perfect, they're always made with love. 💛</p>
+        </section>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🎨</div>
+                <h3>Handmade with Love</h3>
+                <p>Every bracelet is carefully crafted by hand, making each piece unique and special.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💰</div>
+                <h3>Affordable Quality</h3>
+                <p>High-quality materials at prices that won't break the bank. Beauty for everyone!</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✨</div>
+                <h3>Custom Designs</h3>
+                <p>Want something unique? We create custom bracelets and necklaces just for you!</p>
+            </div>
+        </div>
+
+        <section id="about" class="section">
+            <h2>About Us</h2>
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 15px rgba(0,0,0,0.08);">
+                <p style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem;">
+                    We're Natalie Klepser and Stanley Engler, two passionate creators from the heart of Texas, bringing you handcrafted jewelry that tells a story. What started as a love for clay-bead bracelets has grown into a creative journey where we're constantly exploring new materials and styles.
+                </p>
+                <p style="text-align: center; font-size: 1.1rem;">
+                    Each piece from Ferns & Fable is made with intention, creativity, and genuine care. We believe beautiful jewelry should be accessible to everyone, which is why we focus on keeping our prices low while maintaining the quality we'd want to wear ourselves.
+                </p>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <h2>Our Products</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">📝</div>
+                        <strong>Lettered Bracelets</strong><br>
+                        <span style="font-size: 0.9rem;">Clay beads with custom phrases</span><br>
+                        <span style="color: #7a9b7e; font-weight: bold; font-size: 1.3rem;">$4</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">✨</div>
+                        <strong>Charm Bracelets</strong><br>
+                        <span style="font-size: 0.9rem;">Clay beads with adorable charms</span><br>
+                        <span style="color: #7a9b7e; font-weight: bold; font-size: 1.3rem;">$4</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌈</div>
+                        <strong>Classic Clay Bead</strong><br>
+                        <span style="font-size: 0.9rem;">Simple and colorful clay beads</span><br>
+                        <span style="color: #7a9b7e; font-weight: bold; font-size: 1.3rem;">$3</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">💎</div>
+                        <strong>Glass Bead Bracelets</strong><br>
+                        <span style="font-size: 0.9rem;">Limited stock pastel glass beads</span><br>
+                        <span style="color: #7a9b7e; font-weight: bold; font-size: 1.3rem;">$6</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div>
+                        <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎨</div>
+                        <strong>Custom Designs</strong><br>
+                        <span style="font-size: 0.9rem;">Design your perfect bracelet</span><br>
+                        <span style="color: #7a9b7e; font-weight: bold; font-size: 1.3rem;">$5</span>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; font-style: italic; color: #666;">
+                ⚠️ Glass bead bracelets are limited stock - once they're gone, they won't be back for a long time!
+            </p>
+        </section>
+
+        <section id="custom" class="cta-section">
+            <h2>Custom Orders Available!</h2>
+            <p style="font-size: 1.1rem; max-width: 700px; margin: 0 auto;">
+                Want to design something that's perfectly you? We make custom bracelets and necklaces tailored to your style, favorite colors, and personal preferences. Let's create something special together!
+            </p>
+            <a href="#contact" class="btn">Request a Custom Order</a>
+        </section>
+
+        <section id="shipping" class="section">
+            <h2>Shipping Information</h2>
+            <div style="background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); text-align: center;">
+                <p style="font-size: 1.1rem; margin-bottom: 1rem;">
+                    📦 We offer shipping anywhere in the U.S. (shipping fees apply)
+                </p>
+                <p style="font-size: 1.1rem; color: #666;">
+                    Privacy matters! If you're not comfortable sharing your home address, you can always send your local post office address instead.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Get in Touch</h2>
+            <div style="background: white; padding: 3rem 2rem; border-radius: 10px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    Ready to order or have questions? We'd love to hear from you!
+                </p>
+                <p style="font-size: 1.1rem; color: #5a7a5a; margin: 1rem 0;">
+                    📧 Email: nak1@famf.org
+                </p>
+                <p style="font-size: 1.1rem; color: #5a7a5a; margin: 1rem 0;">
+                    📱 Instagram: @natalieannklepser
+                </p>
+                <p style="font-size: 1.1rem; color: #5a7a5a; margin: 1rem 0;">
+                    📞 Phone: 239-416-9848
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ferns & Fable Bracelets. Made with love in Texas. 🌿✨</p>
+        <p>Thanks for supporting small creators! 💛</p>
+    </footer>
+</body>
+</html>
